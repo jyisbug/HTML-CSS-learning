@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charsset="UTF-8"/>
+    <title>The Basic Language of the Web: HTML</title>
+  </head>
+
+  <body>
+    <!-- 
+    <h1>The Basic Language of the Web: HTML</h1>
+    <h2>The Basic Language of the Web: HTML</h2>
+    <h3>The Basic Language of the Web: HTML</h3>
+    <h4>The Basic Language of the Web: HTML</h4>
+    <h5>The Basic Language of the Web: HTML</h5>
+    <h6>The Basic Language of the Web: HTML</h6>
+    -->
+    <!--每一页只有一个H1标题,非强制性，但是一般都是这样-->
+    <!--header是标题（元素之一）-->
+  <header>
+    <h1>📘 The Code Magazine</h1>
+    
+    <!--nav~导航（元素之一）-->
+    <nav>
+    <!--a元素和href属性，href="#"代表空连接啥都没-->
+      <a href="blog.html">Blog</a>
+      <a href="#">Challenges</a>
+      <a href="#">Flexbox</a>
+      <a href="#">CSS Grid</a>
+    </nav>
+  </header>
+<!--article（元素之一）-->
+  <article>
+    <header>
+    <h2>The Basic Language of the Web: HTML</h2>
+<!--图片更换路径后，前面加个img/重新找回路径-->
+<img 
+  src="img/laura-jones.jpg" 
+  alt="photo of author" 
+  width = "50" 
+  height="50"
+ />
+
+    <!--加粗用<b></b>（但是这个是老的HTML用法）HTML5之后用<strong></strong>,<b>没有含义，<strong>有important的意义-->
+    <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+
+<!--插入图片,alt=图片描述,建议认真写图片描述，盲人有时候需要这个，如果图片插入路径错误，会显示描述-->
+  <img
+   src="img/post-img.jpg" 
+   alt="HTML code on a screen" 
+   width ="500"
+   height="200" 
+   />
+  </header>
+    <h2>The Basic Language of the Web: HTML</h2>
+    <!--<i></i>表示斜体，老做法，新的用<em></em>-->
+  <p>
+    All modern websites and web applications are built using three
+    <em>fundamental</em>
+    technologies: HTML, CSS and JavaScript. These are the languages of the web.
+  </p>
+  <p>
+    In this post, let's focus on HTML. We will learn what HTML is all about,and why you too should learn it.
+  </p>
+
+    <h3>What is HTML</h3>
+    <p>
+      HTML stands for <strong>H</strong>yper<strong>T</strong>ext
+      <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup language
+      that web developers use to structure and describe the content of a webpage
+      (not a programming language).
+    </p>
+    <p>
+      HTML consists of elements that describe different types of content:
+      paragraphs, links, headings, images, video, etc. Web browsers understand
+      HTML and render HTML code as websites.
+    </p>
+    <!--<ol>代表有序列表和<li>做列表-->
+    <p>In HTML, each element is made up of 3 parts:</p>
+    <ol>
+      <li>The opening tag</li>
+      <li>The closing tag</li>
+      <li>The actual element</li>
+    </ol>
+<!--引入超链接, target="_blank"是新建一个标签-->
+<p>You can lear more at <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+  target = "_blank">MDN Web Docs</a></p>
+
+    <h3>Why should you learn HTML?</h3>
+    <p>
+      There are countless reasons for learning the fundamental language of theweb. Here are 5 of them: 
+    </p>
+    <!--<ul>代表无序列表-->
+    <ul>
+      <li>
+        To be able to use the fundamental web dev language
+      </li>
+      <li>
+        To hand-craft beautiful websites instead of relying on tools like Worpress or Wix
+      </li>
+      <li>
+        To build web applications
+      </li>
+      <li>
+        To impress friends To have fun😃 
+      </li>
+    </ul>
+      <p>
+        Hopefully you learned something new here. See you next time!
+      </p>
+    </p>
+  </article>
+  <aside>
+    <h4>Related posts</h4>
+    <ul>
+      <li>
+        <img
+        src="img/related-1.jpg" 
+        alt="a jpg of user1" 
+        width ="100"
+        height="100" 
+        />
+        <a href="#">How to Learn Web Development</a>
+      </li>
+      <p>By Jonas Schmedtmann</p>
+      <li>
+        <img
+        src ="img/related-2.jpg"
+        alt="a jpg of user2"
+        width="100"
+        height="100"
+        />
+        <a href="#">The Unknown Powers of CSS</a>
+      </li>
+      <p>By Jim Dillon</p>
+      <li>
+        <img
+        src="img/related-3.jpg"
+        alt="a jpg of user3"
+        width="100"
+        height="100"
+        />
+        <a href="#">Why JavaScript is Awesome</a>
+      </li>
+      <p>By Matilda</p>
+    </ul>
+  </aside>
+  <!--footer页脚-->
+  <footer>
+    <!--&copy; 一个圆圈里一个C那个符号-->
+    Copyright &copy; 2027 by The Code Magazine.
+  </footer>
+  </body>
+</html>
